@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { FileText, Camera, Upload, MapPin, Clock, Shield, AlertTriangle } from 'lucide-react';
+import { FileText, Camera, Upload, MapPin, Clock, Shield, AlertTriangle, Phone } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
