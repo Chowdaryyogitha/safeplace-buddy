@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { MapPin, Phone, MessageCircle, FileText, Globe, Shield, Camera, Upload, Heart, Users } from 'lucide-react';
+import { MapPin, Phone, MessageCircle, FileText, Globe, Shield, Camera, Upload, Heart, Users, Navigation } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -8,7 +7,8 @@ import { Badge } from '@/components/ui/badge';
 import LocationServices from '@/components/LocationServices';
 import EmergencyHelplines from '@/components/EmergencyHelplines';
 import IncidentReporting from '@/components/IncidentReporting';
-import AIAssistant from '@/components/AIAssistant';
+import MapComponent from '@/components/MapComponent';
+import AIAssistantPopup from '@/components/AIAssistantPopup';
 import LanguageSelector from '@/components/LanguageSelector';
 
 const Index = () => {
@@ -22,7 +22,7 @@ const Index = () => {
       location: "Location Services",
       helplines: "Emergency Helplines",
       report: "Report Incident",
-      assistant: "AI Assistant",
+      map: "Emergency Map",
       quickAccess: "Quick Access",
       emergency: "Emergency",
       safetyFirst: "Safety First",
@@ -34,7 +34,7 @@ const Index = () => {
       location: "स्थान सेवाएं",
       helplines: "आपातकालीन हेल्पलाइन",
       report: "घटना की रिपोर्ट करें",
-      assistant: "AI सहायक",
+      map: "आपातकालीन मैप",
       quickAccess: "त्वरित पहुंच",
       emergency: "आपातकाल",
       safetyFirst: "सुरक्षा पहले",
@@ -95,7 +95,7 @@ const Index = () => {
       </div>
 
       {/* Main Content with enhanced styling */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-20">
         {/* Welcome Message */}
         <div className="text-center mb-8">
           <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-2xl p-6 border border-pink-200">
@@ -128,11 +128,11 @@ const Index = () => {
               <span className="hidden sm:inline">{t.report}</span>
             </TabsTrigger>
             <TabsTrigger 
-              value="assistant" 
+              value="map" 
               className="flex items-center space-x-2 data-[state=active]:bg-gradient-to-r data-[state=active]:from-green-500 data-[state=active]:to-teal-500 data-[state=active]:text-white"
             >
-              <MessageCircle className="h-4 w-4" />
-              <span className="hidden sm:inline">{t.assistant}</span>
+              <Navigation className="h-4 w-4" />
+              <span className="hidden sm:inline">{t.map}</span>
             </TabsTrigger>
           </TabsList>
 
@@ -148,8 +148,8 @@ const Index = () => {
             <IncidentReporting language={currentLanguage} />
           </TabsContent>
 
-          <TabsContent value="assistant">
-            <AIAssistant language={currentLanguage} />
+          <TabsContent value="map">
+            <MapComponent language={currentLanguage} />
           </TabsContent>
         </Tabs>
       </main>
@@ -161,7 +161,7 @@ const Index = () => {
             { id: 'location', icon: MapPin, label: t.location, color: 'text-pink-600' },
             { id: 'helplines', icon: Phone, label: t.helplines, color: 'text-blue-600' },
             { id: 'report', icon: FileText, label: t.report, color: 'text-orange-600' },
-            { id: 'assistant', icon: MessageCircle, label: t.assistant, color: 'text-green-600' }
+            { id: 'map', icon: Navigation, label: t.map, color: 'text-green-600' }
           ].map(({ id, icon: Icon, label, color }) => (
             <button
               key={id}
@@ -176,6 +176,9 @@ const Index = () => {
           ))}
         </div>
       </div>
+
+      {/* AI Assistant Popup */}
+      <AIAssistantPopup language={currentLanguage} />
     </div>
   );
 };
