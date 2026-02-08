@@ -99,6 +99,74 @@ const MapComponent: React.FC<MapComponentProps> = ({ language }) => {
       lng: 77.2070,
       type: 'metro',
       features: ['24/7', 'CCTV', 'Security', 'Crowded']
+    },
+    {
+      id: '5',
+      name: 'Women Police Station',
+      lat: 28.6145,
+      lng: 77.2115,
+      type: 'police',
+      phone: '1091',
+      features: ['Women Officers', '24/7', 'Safe Space', 'Counseling']
+    },
+    {
+      id: '6',
+      name: 'Safdarjung Hospital',
+      lat: 28.5685,
+      lng: 77.2065,
+      type: 'hospital',
+      phone: '011-26165060',
+      features: ['24/7', 'Trauma Center', 'Ambulance', 'Emergency']
+    },
+    {
+      id: '7',
+      name: 'DLF Promenade Mall',
+      lat: 28.5555,
+      lng: 77.0890,
+      type: 'mall',
+      features: ['CCTV', 'Security Guards', 'Well Lit', 'Crowded']
+    },
+    {
+      id: '8',
+      name: 'Rajiv Chowk Metro Station',
+      lat: 28.6328,
+      lng: 77.2197,
+      type: 'metro',
+      features: ['24/7', 'CCTV', 'Security', 'Central Location']
+    },
+    {
+      id: '9',
+      name: 'Lodhi Garden',
+      lat: 28.5930,
+      lng: 77.2198,
+      type: 'park',
+      features: ['Day Hours', 'Security Patrol', 'Crowded', 'Well Lit']
+    },
+    {
+      id: '10',
+      name: 'AIIMS Hospital',
+      lat: 28.5672,
+      lng: 77.2100,
+      type: 'hospital',
+      phone: '011-26588500',
+      features: ['24/7', 'Emergency', 'Trauma Center', 'Ambulance']
+    },
+    {
+      id: '11',
+      name: 'Hauz Khas Police Station',
+      lat: 28.5494,
+      lng: 77.2001,
+      type: 'police',
+      phone: '100',
+      features: ['24/7', 'Emergency Response', 'Quick Response Team']
+    },
+    {
+      id: '12',
+      name: 'Ambience Mall Vasant Kunj',
+      lat: 28.5274,
+      lng: 77.1524,
+      type: 'mall',
+      features: ['CCTV', 'Security', 'Well Lit', 'Women Parking']
     }
   ];
 
