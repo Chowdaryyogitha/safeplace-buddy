@@ -53,14 +53,14 @@ const AIAssistantPopup: React.FC<AIAssistantPopupProps> = ({ language }) => {
       {/* Popup Modal */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-end justify-end p-4 pointer-events-none">
-          <Card className={`pointer-events-auto shadow-2xl border-2 border-purple-200 transition-all duration-300 ${
+          <Card className={`pointer-events-auto shadow-2xl border-2 border-purple-200 transition-all duration-300 flex flex-col ${
             isMinimized 
               ? 'w-80 h-16' 
               : 'w-96 h-[600px] max-h-[80vh]'
           } max-w-[90vw]`}>
             
             {/* Header */}
-            <div className="flex items-center justify-between p-4 bg-gradient-to-r from-purple-100 to-indigo-100 rounded-t-lg border-b">
+            <div className="flex items-center justify-between p-4 bg-gradient-to-r from-purple-100 to-indigo-100 rounded-t-lg border-b flex-shrink-0">
               <div className="flex items-center space-x-2">
                 <div className="h-3 w-3 bg-green-500 rounded-full animate-pulse"></div>
                 <span className="font-semibold text-purple-700 text-sm">
@@ -96,10 +96,8 @@ const AIAssistantPopup: React.FC<AIAssistantPopupProps> = ({ language }) => {
 
             {/* Content */}
             {!isMinimized && (
-              <CardContent className="p-0 flex-1 overflow-hidden">
-                <div className="h-full">
-                  <AIAssistant language={language} />
-                </div>
+              <CardContent className="p-0 flex-1 overflow-hidden flex flex-col min-h-0">
+                <AIAssistant language={language} />
               </CardContent>
             )}
           </Card>

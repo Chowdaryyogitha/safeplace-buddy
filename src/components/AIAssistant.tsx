@@ -219,9 +219,9 @@ const AIAssistant: React.FC<AIAssistantProps> = ({ language }) => {
   };
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full min-h-0">
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gradient-to-br from-gray-50 to-white">
+      <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gradient-to-br from-gray-50 to-white min-h-0 scrollbar-thin scrollbar-thumb-purple-300 scrollbar-track-transparent">
         {messages.map((message) => (
           <div
             key={message.id}
