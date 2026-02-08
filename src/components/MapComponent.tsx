@@ -18,6 +18,7 @@ interface SafeZone {
   type: 'police' | 'hospital' | 'mall' | 'metro' | 'park';
   phone?: string;
   features: string[];
+  distance?: number;
 }
 
 const MapComponent: React.FC<MapComponentProps> = ({ language }) => {
