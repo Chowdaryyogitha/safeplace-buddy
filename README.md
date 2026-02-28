@@ -1,73 +1,65 @@
-# Welcome to your Lovable project
+SafePlace Buddy 💙
 
-## Project info
+A women’s safety web application built using Lovable AI.
+It provides guidance during emergencies and helps users find nearby safe locations quickly and easily.
 
-**URL**: https://lovable.dev/projects/6403c026-0b5d-43f2-9673-0ffdd0a25d3c
+🌐 Live Site: https://safeplace-buddy.lovable.app
 
-## How can I edit this code?
+🚀 Project Overview
 
-There are several ways of editing your application.
+  This project is created using Lovable and focuses on women’s safety, support, and awareness.
+  It is designed to be simple, fast, and accessible during critical situations.
 
-**Use Lovable**
+🛠 Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6403c026-0b5d-43f2-9673-0ffdd0a25d3c) and start prompting.
+  > React
 
-Changes made via Lovable will be committed automatically to this repo.
+  > TypeScript
 
-**Use your preferred IDE**
+  > Vite
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+  > Tailwind CSS
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+  > shadcn/ui
 
-Follow these steps:
+✏️ How to Edit the Project
+Option 1:Using Lovable (Easiest)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+  >Open the project in Lovable
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+  >Make changes using prompts
 
-# Step 3: Install the necessary dependencies.
-npm i
+  >Changes are auto-saved and committed
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+🔗 https://lovable.dev/projects/6403c026-0b5d-43f2-9673-0ffdd0a25d3c
 
-**Edit a file directly in GitHub**
+Option 2: Run Locally (For Developers)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+ Make sure Node.js & npm are installed.
 
-**Use GitHub Codespaces**
+  git clone <YOUR_GIT_URL>
+  cd <PROJECT_NAME>
+  npm install
+  npm run dev
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+Option 3: Edit on GitHub
 
-This project is built with:
+ >Open any file
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+ >Click the ✏️ Edit button
 
-## How can I deploy this project?
+ >Commit changes
 
-Simply open [Lovable](https://lovable.dev/projects/6403c026-0b5d-43f2-9673-0ffdd0a25d3c) and click on Share -> Publish.
+🌍 Deployment
 
-## Can I connect a custom domain to my Lovable project?
+  Deploy directly from Lovable:
 
-Yes, you can!
+  Lovable → Share → Publish
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🌐 Custom Domain
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+   You can connect your own domain from:
+    Project Settings → Domains
+
+📘 Docs: https://docs.lovable.dev/tips-tricks/custom-domain
